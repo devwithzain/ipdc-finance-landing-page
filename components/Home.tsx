@@ -1,5 +1,13 @@
 "use client";
-import { Footer, Hero, NewsLetter } from "@components";
+import {
+	Experience,
+	Footer,
+	Glance,
+	Hero,
+	NewsLetter,
+	Partner,
+	Result,
+} from "@components";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Sticky } from "@animation";
@@ -17,23 +25,25 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<Sticky />
+			<div className="hidden lg:block">
+				<Sticky />
+			</div>
 			<div className="w-full">
-				<div className="px-[100rem]">
+				<div className="md:px-[70rem] px-[100rem]">
 					<Hero />
 				</div>
-				{/* <div className="px-[100rem]">
+				<div className="md:px-[70rem] px-[100rem]">
 					<Experience />
 				</div>
 				<Partner />
-				<div className="px-[100rem]">
+				<div className="md:px-[70rem] px-[100rem]">
 					<Glance />
 				</div>
-				<div className="px-[100rem]">
+				<div className="md:px-[70rem] px-[100rem]">
 					<Result />
-				</div> */}
+				</div>
 				<NewsLetter />
-				<div className="px-[100rem]">
+				<div className="md:px-[70rem] px-[100rem]">
 					<Footer />
 				</div>
 			</div>

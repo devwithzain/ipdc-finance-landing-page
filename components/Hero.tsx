@@ -7,14 +7,18 @@ import Button from "./Button";
 
 export default function Hero() {
 	const phrases = ["Chase Your Dream with us"];
+	const phrases1 = ["Chase", "Your Dream", " with us"];
 	return (
 		<div className="w-full">
-			<div className="w-full min-h-[90vh] flex justify-center flex-col">
-				<h1 className="text-[#202020] uppercase tracking-[1rem] text-[70rem] font-bold">
+			<div className="w-full min-h-[90svh] flex justify-center flex-col sm:gap-y-[40rem]">
+				<h1 className="text-[#202020] uppercase tracking-wider text-[60rem] mb-[40rem] font-bold sm:text-[80rem] lg:block hidden">
 					<TextMask>{phrases}</TextMask>
 				</h1>
-				<div className="w-full flex justify-between gap-x-[50rem]">
-					<div className="w-[70%] bg-[#ffeaf5] relative rounded-[30rem] h-full">
+				<h1 className="text-[#202020] uppercase tracking-wider text-[60rem] mb-[40rem] font-bold block lg:hidden">
+					<TextMask>{phrases1}</TextMask>
+				</h1>
+				<div className="w-full flex justify-between gap-[50rem] flex-col lg:flex-row">
+					<div className="lg:w-[70%] w-full bg-[#ffeaf5] relative rounded-[30rem] h-full">
 						<div className="w-full h-full flex items-center justify-center">
 							<Image
 								src={hero}
@@ -24,7 +28,7 @@ export default function Hero() {
 								className="w-[70%] h-full object-cover"
 							/>
 						</div>
-						<div className="bg-white px-[20rem] py-[20rem] h-[71rem] flex items-center gap-x-[20rem] absolute top-[50rem] left-[-30rem] shadow-lg rounded-[55rem]">
+						<div className="bg-white px-[20rem] py-[20rem] h-[71rem] flex items-center gap-x-[20rem] absolute top-[50rem] left-[-35rem] shadow-lg rounded-[55rem]">
 							<Image
 								src={car}
 								alt="img"
@@ -36,7 +40,7 @@ export default function Hero() {
 								Car Loans
 							</p>
 						</div>
-						<div className="bg-white px-[20rem] py-[20rem] h-[71rem] flex items-center gap-x-[20rem] absolute bottom-[100rem] right-[-30rem] shadow-lg rounded-[55rem]">
+						<div className="bg-white px-[20rem] py-[20rem] h-[71rem] flex items-center gap-x-[20rem] absolute bottom-[100rem] right-[-35rem] shadow-lg rounded-[55rem]">
 							<Image
 								src={house}
 								alt="img"
@@ -49,9 +53,9 @@ export default function Hero() {
 							</p>
 						</div>
 					</div>
-					<div className="w-[30%] h-full">
+					<div className="w-full lg:w-[30%] h-full sm:gap-y-[40rem]">
 						<div>
-							<p className="text-[20rem] font-normal leading-[137%] text-[#676767] mb-[20rem]">
+							<p className="text-[18rem] tracking-wider leading-[137%] text-[#676767] mb-[20rem]">
 								The path to achieving a goal is often laden with challenges and
 								obstacles that test our determination and resilience. Each
 								hurdle we overcome, each setback we navigate through, adds
@@ -63,11 +67,11 @@ export default function Hero() {
 							</p>
 							<div className="flex items-center gap-x-[15rem]">
 								<Button
-									className="bg-[#ED017F]"
+									className="bg-[#ED017F] text-white"
 									title="Apply Online"
 								/>
 								<Button
-									className="bg-white text-black border border-black"
+									className="text-black border border-black"
 									title="Loan Caclulator"
 								/>
 							</div>

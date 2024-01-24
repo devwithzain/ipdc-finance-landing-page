@@ -2,7 +2,7 @@ export { default as car } from './car.svg';
 export { default as hero } from './hero.png';
 export { default as logo } from './logo.svg';
 export { default as magnifier } from './magnifier.svg';
-export { default as house } from './House.svg';
+export { default as house } from './house.svg';
 export { default as facebook } from './facebook.svg';
 export { default as instagram } from './instagram.svg';
 export { default as linkedin } from './linkedin.svg';

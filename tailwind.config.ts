@@ -9,11 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: "#00040f",
+        secondary: "#00f6ff",
       },
+    },
+    screens: {
+      sm: { min: "200px", max: '768px' },
+      md: { min: "768px", max: '1025px' },
+      lg: '1026px'
     },
   },
   plugins: [],

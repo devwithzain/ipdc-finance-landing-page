@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	src: url("../font/PPNeueMontreal.woff");
+	font-family: Montreal;
+}
+
+body::-webkit-scrollbar {
+	width: 0;
+}
+body {
+	overflow-x: hidden;
+}
+html {
+	font-size: 6.25%;
+	font-family: Montreal;
+	scroll-behavior: smooth;
+}
+@media (max-width: 1490px) {
+	html {
+		font-size: 5.5%;
+	}
+}
+@media (max-width: 1060px) {
+	html {
+		font-size: 4.5%;
+	}
+}
+@media (max-width: 768px) {
+	html {
+		font-size: 3.5%;
+	}
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 3%;
+	}
+}
+@media (max-width: 200px) {
+	html {
+		font-size: 2.5%;
+	}
+}
+
+.slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider .el {
+	width: 100%;
+	height: 100%;
+}
+
+.slider .el:hover .perspectiveText {
+	transform: rotateX(90deg);
+}
+
+.slider .el:hover .perspectiveText p:nth-of-type(1) {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+.slider .el:hover .perspectiveText p:nth-of-type(2) {
+	opacity: 1;
+}
+.perspectiveText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspectiveText p {
+	transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.perspectiveText p:nth-of-type(2) {
+	position: absolute;
+	transform-origin: bottom center;
+	transform: rotateX(-90deg) translateY(12px);
+	opacity: 0;
+}
+
+.btn:hover {
+	border-radius: 5rem;
+	transform: translateY(-10rem);
+	box-shadow: 0 7rem 0 -2rem #f85959, 0 15rem 0 -4rem #39a2db,
+		0 16rem 10rem -3rem #39a2db;
+}
+
+.btn:active {
+	transition: all 0.2s;
+	transform: translateY(-5rem);
+	box-shadow: 0 2rem 0 -2rem #f85959, 0 8rem 0 -4rem #39a2db,
+		0 12rem 10rem -3rem #39a2db;
+}

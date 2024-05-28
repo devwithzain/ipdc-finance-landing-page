@@ -1,6 +1,6 @@
 export { default as car } from './car.svg';
 export { default as hero } from './hero.png';
-export { default as logo } from './logo.svg';
+export { default as logo } from './logo.png';
 export { default as magnifier } from './magnifier.svg';
 export { default as house } from './house.svg';
 export { default as facebook } from './facebook.svg';

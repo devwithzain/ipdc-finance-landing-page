@@ -13,7 +13,7 @@ export default function MFooter() {
 			variants={footerVarient}
 			initial="hidden"
 			whileInView="vissible"
-			className="mt-[80px] w-full overflow-hidden">
+			className="w-full overflow-hidden">
 			<div className="flex justify-between py-[50px] gap-[50px] sm:flex-col xm:flex-col">
 				<div className="flex justify-between flex-col gap-y-[20px]">
 					<div className="flex-col flex">

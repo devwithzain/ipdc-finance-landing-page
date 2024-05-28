@@ -1,13 +1,13 @@
 "use client";
-import { LinkHover, MobileNavbar } from "@animation";
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@components";
 import { navLinks } from "@constants";
 import { navVariants } from "@motion";
 import { logo, magnifier } from "@public";
+import { LinkHover, MobileNavbar } from "@animation";
 import { useMotionValueEvent, useScroll, motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
 
 export default function Navbar() {
 	const [hidden, setHidden] = useState(false);
@@ -39,8 +39,8 @@ export default function Navbar() {
 					{navLinks.map((item) => (
 						<div key={item.id}>
 							<Link
-								href={`#${item.href}`}
-								className="text-[18px] font-bold text-[#676767]">
+								href={"/"}
+								className="text-[20px] font-medium text-[#676767]">
 								<LinkHover>{item.title}</LinkHover>
 							</Link>
 						</div>

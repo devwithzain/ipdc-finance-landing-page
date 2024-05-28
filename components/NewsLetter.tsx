@@ -16,7 +16,7 @@ export default function NewsLetter() {
 						ac quis aliquam arcu lacus.
 					</p>
 				</div>
-				<div className="flex items-center justify-center gap-[10px] sm:flex-col xm:flex-col">
+				<div className="flex items-center sm:items-start xm:items-start justify-center gap-[10px] sm:flex-col xm:flex-col">
 					<div className="w-[350px]">
 						<input
 							type="email"

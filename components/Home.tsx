@@ -7,6 +7,7 @@ import {
 	NewsLetter,
 	Partner,
 	Result,
+	Services,
 } from "@components";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
@@ -36,9 +37,8 @@ export default function Home() {
 					<Experience />
 				</div>
 				<Partner />
-				<div className="padding-x">
-					<Glance />
-				</div>
+				<Glance />
+				<Services />
 				<div className="padding-x">
 					<Result />
 				</div>

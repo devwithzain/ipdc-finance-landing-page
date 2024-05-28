@@ -6,7 +6,7 @@ export default function Result() {
 
 	return (
 		<section className="w-full padding-y">
-			<div className="flex flex-col gap-[40px]">
+			<div className="flex flex-col gap-y-20 sm:gap-y-10 xm:gap-y-10">
 				<div className="flex flex-col gap-y-[20px]">
 					<h1 className="heading text-[#343434] font-bold leading-none text-center tracking-wider sm:text-left xm:text-left">
 						<TextMask>{phrases}</TextMask>
@@ -17,7 +17,7 @@ export default function Result() {
 						mattis vel feugiat erat tortor eleifend.
 					</p>
 				</div>
-				<div className="w-full grid grid-cols-4 sm:grid-cols-1 md:grid-cols-3 xm:grid-cols-1 gap-x-[100px] gap-y-[50px]">
+				<div className="w-full grid grid-cols-4 sm:grid-cols-1 md:grid-cols-3 xm:grid-cols-1 gap-x-[100px] gap-y-[20px]">
 					{resultList.map((item, i) => (
 						<div
 							className="shadow-md rounded-md my-[10px] text-center sm:text-left xm:text-left p-[20px]"

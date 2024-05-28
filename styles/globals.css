@@ -27,7 +27,7 @@ html {
 
 @layer utilities {
 	.padding-x {
-		@apply px-[50px] md:px-[30px] sm:px-[20px] xm:px-[20px];
+		@apply px-[100px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
 
 	.padding-y {
@@ -43,7 +43,7 @@ html {
 	}
 
 	.sub-heading {
-		@apply text-[55px] leading-[55px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
+		@apply text-[26px] md:text-[22px] sm:text-[18px] xm:text-[15px];
 	}
 
 	.paragraph {

@@ -8,5 +8,6 @@ export { default as Partner } from './Partner';
 export { default as Glance } from './Glance';
 export { default as Button } from './Button';
 export { default as Hero } from './Hero';
+export { default as Services } from './Services';
 
 

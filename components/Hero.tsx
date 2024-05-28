@@ -1,9 +1,9 @@
-import { footerIcons } from "@constants";
 import Link from "next/link";
-import Image from "next/image";
-import { call, car, hero, house } from "@public";
-import { Magnetic, TextMask } from "@animation";
 import Button from "./Button";
+import Image from "next/image";
+import { footerIcons } from "@constants";
+import { Magnetic, TextMask } from "@animation";
+import { call, car, hero, house } from "@public";
 
 export default function Hero() {
 	const phrases = ["Chase Your Dream with us"];
@@ -14,7 +14,7 @@ export default function Hero() {
 				<h1 className="text-[#202020] uppercase tracking-wider heading font-bold sm:hidden xm:hidden flex">
 					<TextMask>{phrases}</TextMask>
 				</h1>
-				<h1 className="text-[#202020] uppercase tracking-wider heading leading-none font-bold sm:block xm:block hidden">
+				<h1 className="text-[#202020] uppercase tracking-wider heading leading-none font-bold sm:block xm:block hidden mb-[20px]">
 					<TextMask>{phrases1}</TextMask>
 				</h1>
 				<div className="w-full flex justify-between gap-[20px] sm:flex-col xm:flex-col">

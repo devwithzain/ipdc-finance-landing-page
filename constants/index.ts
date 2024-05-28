@@ -1,15 +1,30 @@
-import { bag, c2s, carOne, circle, cube, decimal, facebook, flying, forbes, four, funny, glass, instagram, linkedin, locomotive, macys, maven, mensHealth, mrBeast, object, officestudio, one, pig, powell, rocket, scinery, silencio, three, two, user, youtube } from "@public";
+import { bag, carOne, circle, cube, facebook, flying, forbes, four, glass, instagram, linkedin, macys, mensHealth, mrBeast, object, one, pig, rocket, scinery, three, two, user, youtube } from "@public";
 
 export const navLinks = [
     {
         id: 1,
-        title: "About Us",
-        href: "about-us"
+        title: "Retail",
+        href: "/"
     },
     {
         id: 2,
+        title: "SME",
+        href: "/"
+    },
+    {
+        id: 3,
+        title: "Corporate",
+        href: "/"
+    },
+    {
+        id: 4,
+        title: "About Us",
+        href: "/"
+    },
+    {
+        id: 5,
         title: "Campgains",
-        href: "campgains"
+        href: "/"
     },
 ];
 
@@ -264,5 +279,28 @@ export const partnerList = [
     {
         id: 8,
         img: mrBeast
+    },
+];
+
+export const servicsItems = [
+    {
+        id: 1,
+        title: "IPDC SAVING SCHEMES",
+        img: glass,
+    },
+    {
+        id: 2,
+        title: "IPDC Personal loan",
+        img: flying,
+    },
+    {
+        id: 3,
+        title: "IPDC Deposit schemes",
+        img: pig,
+    },
+    {
+        id: 4,
+        title: "IPDC auto loan",
+        img: carOne,
     },
 ];

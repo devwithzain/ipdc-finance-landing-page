@@ -11,10 +11,10 @@ export default function Hero() {
 	return (
 		<div className="w-full">
 			<div className="w-full min-h-[90vh] flex justify-center flex-col sm:gap-y-[40px]">
-				<h1 className="text-[#202020] uppercase tracking-wider heading mb-[40px] font-bold sm:hidden xm:hidden flex">
+				<h1 className="text-[#202020] uppercase tracking-wider heading font-bold sm:hidden xm:hidden flex">
 					<TextMask>{phrases}</TextMask>
 				</h1>
-				<h1 className="text-[#202020] uppercase tracking-wider heading mb-[40px] leading-none font-bold sm:block xm:block hidden">
+				<h1 className="text-[#202020] uppercase tracking-wider heading leading-none font-bold sm:block xm:block hidden">
 					<TextMask>{phrases1}</TextMask>
 				</h1>
 				<div className="w-full flex justify-between gap-[20px] sm:flex-col xm:flex-col">

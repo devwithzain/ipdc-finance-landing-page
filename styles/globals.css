@@ -39,7 +39,7 @@ html {
 	}
 
 	.heading {
-		@apply text-[60px] md:text-[50px] sm:text-[4px] xm:text-[40px];
+		@apply text-[60px] md:text-[50px] sm:text-[40px] xm:text-[40px];
 	}
 
 	.sub-heading {

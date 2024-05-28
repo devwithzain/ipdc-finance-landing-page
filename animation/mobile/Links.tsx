@@ -27,7 +27,7 @@ export default function Links({
 				animate={isActive ? "open" : "closed"}
 				className="w-[10px] h-[10px] bg-white rounded-full absolute left-[-20px]"
 			/>
-			<Link href={href}>{title}</Link>
+			<Link href={`#${data.href}`}>{title}</Link>
 		</motion.div>
 	);
 }

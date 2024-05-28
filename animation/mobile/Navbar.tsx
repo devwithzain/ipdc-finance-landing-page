@@ -34,7 +34,8 @@ export default function Navbar() {
 								key={index}
 								data={{ ...data, index }}
 								isActive={selectedIndicator == data.href}
-								setSelectedIndicator={setSelectedIndicator}></Links>
+								setSelectedIndicator={setSelectedIndicator}
+							/>
 						);
 					})}
 				</div>

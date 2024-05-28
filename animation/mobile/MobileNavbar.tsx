@@ -27,7 +27,7 @@ export default function Home() {
 				</div>
 				<div
 					onClick={() => {
-						setIsActive(!isActive);
+						setIsActive(() => !isActive);
 					}}
 					className="w-[40px] h-[40px] rounded-full bg-[#f148a2] cursor-pointer flex items-center justify-center relative z-50">
 					<div

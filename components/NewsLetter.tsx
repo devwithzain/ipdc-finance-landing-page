@@ -6,12 +6,12 @@ export default function NewsLetter() {
 
 	return (
 		<section className="w-full padding-y bg-[#FEF9FC] padding-x">
-			<div className="flex flex-col gap-y-[20px] flex-wrap">
-				<div className="flex flex-col gap-y-[20px]">
-					<h1 className="heading text-[#343434] font-bold leading-none text-center tracking-wider">
+			<div className="flex flex-col gap-y-[10px] flex-wrap">
+				<div className="flex flex-col gap-y-[10px]">
+					<h1 className="heading text-[#343434] font-bold leading-none text-center tracking-wider sm:text-left xm:text-left">
 						<TextMask>{phrases}</TextMask>
 					</h1>
-					<p className="text-[#999] text-[16px] font-normal leading-[22px] text-center">
+					<p className="text-[#999] text-[16px] font-normal leading-[22px] text-center sm:text-left xm:text-left">
 						Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit. Eget
 						ac quis aliquam arcu lacus.
 					</p>

@@ -44,14 +44,14 @@ export default function LogoMarquee({
 	});
 
 	return (
-		<div className="overflow-hidden flex whitespace-nowrap flex-wrap my-[100rem]">
+		<div className="overflow-hidden flex whitespace-nowrap flex-wrap my-[50px]">
 			<motion.div
 				className="flex whitespace-nowrap items-center flex-nowrap"
 				style={{ x }}>
-				<span className="flex gap-x-[60rem]">{children} </span>
-				<span className="flex gap-x-[60rem]">{children} </span>
-				<span className="flex gap-x-[60rem]">{children} </span>
-				<span className="flex gap-x-[60rem]">{children} </span>
+				<span className="flex gap-x-[60px]">{children} </span>
+				<span className="flex gap-x-[60px]">{children} </span>
+				<span className="flex gap-x-[60px]">{children} </span>
+				<span className="flex gap-x-[60px]">{children} </span>
 			</motion.div>
 		</div>
 	);

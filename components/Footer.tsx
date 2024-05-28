@@ -13,19 +13,19 @@ export default function MFooter() {
 			variants={footerVarient}
 			initial="hidden"
 			whileInView="vissible"
-			className="mt-[100rem] w-full overflow-hidden">
-			<div className="flex  justify-between py-[60rem] gap-[50rem] flex-col lg:flex-row">
-				<div className="flex justify-between items-center lg:flex-col gap-y-[20rem]">
+			className="mt-[80px] w-full overflow-hidden">
+			<div className="flex justify-between py-[50px] gap-[50px] sm:flex-col xm:flex-col">
+				<div className="flex justify-between flex-col gap-y-[20px]">
 					<div className="flex-col flex">
-						<h1 className="text-[#010101] text-[18rem] font-semibold leading-[22rem] mb-[15rem]">
+						<h1 className="text-[#010101] text-[22px] font-semibold leading-none mb-[15px]">
 							About the company
 						</h1>
-						<p className="text-[#676767] text-[14rem] leading-[22rem] font-normal">
+						<p className="text-[#676767] text-[16px] sm:text-[14px] xm:text-[14px] leading-normal font-normal">
 							Learn To Love Growth <br /> And Change And You Will <br /> Be A
 							Success. Microsoft <br /> Patch
 						</p>
 					</div>
-					<div className="flex gap-[20rem] items-center ">
+					<div className="flex gap-[10px] items-center">
 						{footerIcons.map((item) => (
 							<Magnetic key={item.id}>
 								<Link href={item.link}>
@@ -41,22 +41,22 @@ export default function MFooter() {
 						))}
 					</div>
 				</div>
-				<div className="flex justify-between gap-[80rem] flex-wrap">
+				<div className="flex justify-between gap-[80px] flex-wrap">
 					{footerLinks.map((item, i) => (
 						<div
-							className="flex flex-col gap-y-[10rem] sm:w-[80px]"
+							className="flex flex-col gap-y-[10px] sm:w-[80px] xm:w-[80px]"
 							key={item.id}>
-							<div className="flex items-center ">
+							<div className="flex items-center">
 								{i === 3 && (
 									<Image
 										src={call}
 										alt="img"
 										width={20}
 										height={20}
-										className="object-cover w-auto h-auto mt-[-13rem] mr-[7rem]"
+										className="object-cover w-auto h-auto mt-[-13px] mr-[7px]"
 									/>
 								)}
-								<h1 className="text-[#363940] text-[18rem] font-semibold leading-[22rem] mb-[15rem]">
+								<h1 className="text-[#363940] text-[22px] font-semibold leading-none mb-[15px]">
 									{item.title}
 								</h1>
 							</div>
@@ -64,7 +64,7 @@ export default function MFooter() {
 								<Link
 									href={item.link}
 									key={item.id}>
-									<p className="text-[#676767] text-[14rem] leading-[22rem] font-normal hover:text-[#363940] transition-all ease-in-out duration-[500] hover:-translate-y-12">
+									<p className="text-[#676767] text-[16px] sm:text-[14px] xm:text-[14px] font-normal hover:text-[#363940] transition-all ease-in-out duration-[500] leading-normal">
 										{item.title}
 									</p>
 								</Link>

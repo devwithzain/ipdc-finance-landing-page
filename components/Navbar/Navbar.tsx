@@ -24,7 +24,7 @@ export default function Navbar() {
 	return (
 		<>
 			<motion.nav
-				className="w-full flex items-center justify-between h-[10vh] lg:px-[100rem] px-[70rem] sticky top-0 z-10 bg-white"
+				className="w-full flex items-center justify-between h-[10vh] padding-x sticky top-0 z-10 bg-white sm:hidden xm:hidden"
 				variants={navVariants}
 				animate={hidden ? "hidden" : "vissible"}>
 				<div>
@@ -32,21 +32,21 @@ export default function Navbar() {
 						src={logo}
 						alt="logo"
 						width={100}
-						className="w-[100rem] object-cover"
+						className="w-[100px] object-cover"
 					/>
 				</div>
-				<div className="lg:flex gap-[10rem] font-medium tracking-[1rem] uppercase hidden">
+				<div className="flex gap-[10px] font-medium tracking-[1px] uppercase sm:hidden xm:hidden">
 					{navLinks.map((item) => (
 						<div key={item.id}>
 							<Link
 								href={`#${item.href}`}
-								className="text-[18rem] font-bold text-[#676767]">
+								className="text-[18px] font-bold text-[#676767]">
 								<LinkHover>{item.title}</LinkHover>
 							</Link>
 						</div>
 					))}
 				</div>
-				<div className="lg:flex items-center gap-[25rem] hidden">
+				<div className="flex items-center gap-[25px] sm:hidden xm:hidden">
 					<div>
 						<Image
 							src={magnifier}
@@ -60,10 +60,8 @@ export default function Navbar() {
 						className="bg-[#ED017F] text-white"
 					/>
 				</div>
-				<div className="block lg:hidden">
-					<MobileNavbar />
-				</div>
 			</motion.nav>
+			<MobileNavbar />
 		</>
 	);
 }

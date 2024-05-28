@@ -6,6 +6,7 @@ import { useInView } from "react-intersection-observer";
 export default function TextMask({ children }: { children: string[] }) {
 	const { ref, inView } = useInView({
 		threshold: 0.75,
+		triggerOnce: true,
 	});
 
 	return (

@@ -1,15 +1,19 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { slide, scale } from "@motion";
 import { TlinksProps } from "@types";
+import { slide, scale } from "@motion";
+import { motion } from "framer-motion";
 
-const Links = ({ data, isActive, setSelectedIndicator }: TlinksProps) => {
+export default function Links({
+	data,
+	isActive,
+	setSelectedIndicator,
+}: TlinksProps) {
 	const { title, href, index } = data;
 
 	return (
 		<motion.div
-			className="relative flex items-center"
+			className="relative flex items-center z-30"
 			onMouseEnter={() => {
 				setSelectedIndicator(href);
 			}}
@@ -21,9 +25,9 @@ const Links = ({ data, isActive, setSelectedIndicator }: TlinksProps) => {
 			<motion.div
 				variants={scale}
 				animate={isActive ? "open" : "closed"}
-				className="w-[10rem] h-[10rem] bg-white rounded-full absolute left-[-30rem]"></motion.div>
-			<Link href={`#${href}`}>{title}</Link>
+				className="w-[10px] h-[10px] bg-white rounded-full absolute left-[-20px]"
+			/>
+			<Link href={href}>{title}</Link>
 		</motion.div>
 	);
-};
-export default Links;
+}

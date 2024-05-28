@@ -6,10 +6,10 @@ export default function Partner() {
 	const phrases = ["Business Partners"];
 
 	return (
-		<section className="w-full my-[100rem]">
+		<section className="w-full padding-y">
 			<div className="flex flex-col">
 				<div>
-					<h1 className="text-[36rem] text-[#343434] font-bold leading-[43rem] text-center">
+					<h1 className="heading text-[#343434] font-bold leading-none text-center">
 						<TextMask>{phrases}</TextMask>
 					</h1>
 				</div>

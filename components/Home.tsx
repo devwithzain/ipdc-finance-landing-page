@@ -25,25 +25,25 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<div className="hidden lg:block">
+			<div className="sm:hidden xm:hidden flex">
 				<Sticky />
 			</div>
 			<div className="w-full">
-				<div className="md:px-[70rem] px-[100rem]">
+				<div className="padding-x">
 					<Hero />
 				</div>
-				<div className="md:px-[70rem] px-[100rem]">
+				<div className="padding-x">
 					<Experience />
 				</div>
 				<Partner />
-				<div className="md:px-[70rem] px-[100rem]">
+				<div className="padding-x">
 					<Glance />
 				</div>
-				<div className="md:px-[70rem] px-[100rem]">
+				<div className="padding-x">
 					<Result />
 				</div>
 				<NewsLetter />
-				<div className="md:px-[70rem] px-[100rem]">
+				<div className="padding-x">
 					<Footer />
 				</div>
 			</div>

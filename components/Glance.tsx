@@ -10,23 +10,23 @@ export default function Glance() {
 	const [hovered, setHovered] = useState<boolean>(false);
 	return (
 		<section
-			className="w-full my-[100rem]"
+			className="w-full padding-y"
 			id="aboutUs">
-			<div className="w-full flex lg:flex-row-reverse justify-between gap-x-[30rem] flex-col-reverse gap-y-[40rem]">
-				<div className="flex-1 w-full lg:h-[65vh]">
+			<div className="w-full flex flex-row-reverse justify-between gap-x-[30px] sm:flex-col-reverse xm:flex-col-reverse gap-y-[40px]">
+				<div className="flex-1 w-full h-[65vh] sm:h-full xm:h-full ">
 					<Image
 						src={plant}
 						alt="img"
 						width={800}
 						height={400}
-						className="w-full lg:h-full h-[400px] object-cover"
+						className="w-full h-[65vh] sm:h-[400px] xm:h-[400px] object-cover"
 					/>
 				</div>
-				<div className="flex flex-1 w-full flex-col gap-y-[20rem] lg:h-[65vh]">
-					<h1 className="text-[#343434] text-[32rem] font-bold leading-[38rem] tracking-wider">
+				<div className="flex flex-1 w-full flex-col gap-y-[20px] lg:h-[65vh]">
+					<h1 className="text-[#343434] text-[32px] font-bold leading-[38px] tracking-wider">
 						<TextMask>{phrases}</TextMask>
 					</h1>
-					<p className="text-[#676767] text-[22rem] tracking-wide font-normal leading-[35rem]">
+					<p className="text-[#676767] paragraph tracking-wide font-normal leading-normal">
 						IPDC Finance Limited previously known as Industrial{" "}
 						<br className="lg:block hidden" /> Promotion and Development Company
 						of Bangladesh <br className="lg:block hidden" /> Limited is the
@@ -46,9 +46,9 @@ export default function Glance() {
 						onMouseEnter={() => setHovered(true)}
 						onMouseLeave={() => setHovered(false)}
 						href={"/"}
-						className="flex items-center w-max gap-x-[5rem] group">
+						className="flex items-center w-max gap-x-[5px] group">
 						<div className="flex flex-col">
-							<p className="text-[#ED017F] text-[24rem] font-normal leading-[26rem]">
+							<p className="text-[#ED017F] text-[20px] font-normal">
 								Read more
 							</p>
 							<div

@@ -6,7 +6,7 @@ export default function Button({ title, className }: buttonProps) {
 	return (
 		<div>
 			<button
-				className={`rounded-[5rem] px-[34rem] py-[12rem] text-[14rem] font-medium leading-[20rem] tracking-[0.8rem] btn transition-all duration-200 ease-in-out ${className}`}>
+				className={`rounded-[5px] px-[34px] py-[12px] text-[14px] font-medium leading-[20px] tracking-[0.8px] btn transition-all duration-200 ease-in-out ${className}`}>
 				{title}
 			</button>
 		</div>

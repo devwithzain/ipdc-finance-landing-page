@@ -3,8 +3,8 @@ import { Navbar } from "@components";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "IND Finance",
-	description: "IND Finance",
+	title: "IPDC Finance",
+	description: "IPDC Finance Landing Page BY Zain Ali",
 };
 
 export default function RootLayout({

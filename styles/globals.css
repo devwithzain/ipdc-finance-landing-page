@@ -16,38 +16,46 @@
 body::-webkit-scrollbar {
 	width: 0;
 }
+
 body {
 	overflow-x: hidden;
 }
+
 html {
-	font-size: 6.25%;
 	font-family: Montreal;
-	scroll-behavior: smooth;
-}
-@media (max-width: 1490px) {
-	html {
-		font-size: 5.5%;
-	}
-}
-@media (max-width: 1060px) {
-	html {
-		font-size: 4.5%;
-	}
-}
-@media (max-width: 768px) {
-	html {
-		font-size: 3.5%;
-	}
 }
 
-@media (max-width: 400px) {
-	html {
-		font-size: 3%;
+@layer utilities {
+	.padding-x {
+		@apply px-[50px] md:px-[30px] sm:px-[20px] xm:px-[20px];
 	}
-}
-@media (max-width: 200px) {
-	html {
-		font-size: 2.5%;
+
+	.padding-y {
+		@apply py-[100px] lg:py-[80px] md:py-[60px] sm:py-[40px] xm:py-[40px];
+	}
+
+	.margin {
+		@apply mt-[170px] lg:mt-[80px] md:mt-[60px] sm:mt-[40px] xm:mt-[40px] mb-[130px] lg:mb-[80px] md:mb-[60px] sm:mb-[40px] xm:mb-[40px];
+	}
+
+	.heading {
+		@apply text-[60px] md:text-[50px] sm:text-[4px] xm:text-[40px];
+	}
+
+	.sub-heading {
+		@apply text-[55px] leading-[55px] lg:text-[52px] lg:leading-[52px] md:text-[52px] md:leading-[52px] sm:text-[40px] sm:leading-[40px] xm:text-[31px] xm:leading-[31px];
+	}
+
+	.paragraph {
+		@apply text-[18px] md:text-[16px] sm:text-[16px] xm:text-[16px];
+	}
+
+	.sub-paragraph {
+		@apply xl:text-[21px] xl:leading-[31px] text-[16px] leading-[24px];
+	}
+
+	.small-text {
+		@apply xl:text-[16px] xl:leading-[24px] lg:text-[16px] lg:leading-[24px] text-[14px] leading-[22px];
 	}
 }
 
@@ -74,6 +82,7 @@ html {
 .slider .el:hover .perspectiveText p:nth-of-type(2) {
 	opacity: 1;
 }
+
 .perspectiveText {
 	display: flex;
 	flex-direction: column;
@@ -99,15 +108,15 @@ html {
 }
 
 .btn:hover {
-	border-radius: 5rem;
-	transform: translateY(-10rem);
-	box-shadow: 0 7rem 0 -2rem #f85959, 0 15rem 0 -4rem #39a2db,
-		0 16rem 10rem -3rem #39a2db;
+	border-radius: 5px;
+	transform: translateY(-10px);
+	box-shadow: 0 7px 0 -2px #f85959, 0 15px 0 -4px #39a2db,
+		0 16px 10px -3px #39a2db;
 }
 
 .btn:active {
 	transition: all 0.2s;
-	transform: translateY(-5rem);
-	box-shadow: 0 2rem 0 -2rem #f85959, 0 8rem 0 -4rem #39a2db,
-		0 12rem 10rem -3rem #39a2db;
+	transform: translateY(-5px);
+	box-shadow: 0 2px 0 -2px #f85959, 0 8px 0 -4px #39a2db,
+		0 12px 10px -3px #39a2db;
 }

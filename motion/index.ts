@@ -9,8 +9,8 @@ export const navVariants1 = {
 };
 
 export const footerVarient = {
-    hidden: { y: 150, opacity: 0 },
-    vissible: { y: 0, opacity: 1, transition: { duration: 1, ease: [0.76, 0, 0.24, 1] }, },
+    hidden: { y: 50, opacity: 0 },
+    vissible: { y: 0, opacity: 1, transition: { duration: 1, ease: [0.76, 0, 0.24, 1], type: "Tween" }, },
 };
 
 
